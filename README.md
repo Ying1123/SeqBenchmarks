@@ -1,5 +1,7 @@
 # SeqBenchmarks
 
+Inside scripts need to be modified to run on a different environment.
+
 1. ```bpl``` contains benchmarks from Shaz, which should be run by boogie.
 2. ```diem``` contains benchmarks from diem. 
    ```diem/functional``` contains benchmarks from diem repo in ```/diem/language/move-prover/tests/sources/functional```.
