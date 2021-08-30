@@ -1,0 +1,49 @@
+error: unbound address
+  ┌─ /home/ying/diem/language/move-prover/tests/sources/functional/cross_module_invariant.move:2:9
+  │
+2 │     use DiemFramework::DiemAccount;
+  │         ^^^^^^^^^^^^^ Unbound address 'DiemFramework'
+
+error: unbound module
+  ┌─ /home/ying/diem/language/move-prover/tests/sources/functional/cross_module_invariant.move:2:9
+  │
+2 │     use DiemFramework::DiemAccount;
+  │         ^^^^^^^^^^^^^^^^^^^^^^^^^^ Invalid 'use'. Unbound module: 'DiemFramework::DiemAccount'
+
+error: unbound address
+  ┌─ /home/ying/diem/language/move-prover/tests/sources/functional/cross_module_invariant.move:3:9
+  │
+3 │     use DiemFramework::XUS;
+  │         ^^^^^^^^^^^^^ Unbound address 'DiemFramework'
+
+error: unbound module
+  ┌─ /home/ying/diem/language/move-prover/tests/sources/functional/cross_module_invariant.move:3:9
+  │
+3 │     use DiemFramework::XUS;
+  │         ^^^^^^^^^^^^^^^^^^ Invalid 'use'. Unbound module: 'DiemFramework::XUS'
+
+error: unbound module
+  ┌─ /home/ying/diem/language/move-prover/tests/sources/functional/cross_module_invariant.move:8:35
+  │
+8 │         DiemAccount::add_currency<XUS::XUS>(account);
+  │                                   ^^^ Unbound module alias 'XUS'
+
+error: unbound module
+  ┌─ /home/ying/diem/language/move-prover/tests/sources/functional/cross_module_invariant.move:8:9
+  │
+8 │         DiemAccount::add_currency<XUS::XUS>(account);
+  │         ^^^^^^^^^^^ Unbound module alias 'DiemAccount'
+
+error: unbound module
+   ┌─ /home/ying/diem/language/move-prover/tests/sources/functional/cross_module_invariant.move:21:91
+   │
+21 │         invariant [global, deactivated] forall addr: address: exists<DiemAccount::Balance<XUS::XUS>>(addr) ==> addr == @0x1;
+   │                                                                                           ^^^ Unbound module alias 'XUS'
+
+error: unbound module
+   ┌─ /home/ying/diem/language/move-prover/tests/sources/functional/cross_module_invariant.move:21:70
+   │
+21 │         invariant [global, deactivated] forall addr: address: exists<DiemAccount::Balance<XUS::XUS>>(addr) ==> addr == @0x1;
+   │                                                                      ^^^^^^^^^^^ Unbound module alias 'DiemAccount'
+
+exiting with model building errors

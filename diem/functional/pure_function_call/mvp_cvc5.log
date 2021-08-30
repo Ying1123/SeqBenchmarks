@@ -1,0 +1,13 @@
+error: unbound address
+   ┌─ /home/ying/diem/language/move-prover/tests/sources/functional/pure_function_call.move:16:59
+   │
+16 │         aborts_if Signer::spec_address_of(dr_account) != @DiemRoot;
+   │                                                           ^^^^^^^^ Unbound address 'DiemRoot'. Try declaring it with 'address DiemRoot;'
+
+error: unbound address
+   ┌─ /home/ying/diem/language/move-prover/tests/sources/functional/pure_function_call.move:64:20
+   │
+64 │             get_x(@DiemRoot)
+   │                    ^^^^^^^^ Unbound address 'DiemRoot'. Try declaring it with 'address DiemRoot;'
+
+exiting with model building errors

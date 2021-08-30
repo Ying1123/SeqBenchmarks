@@ -1,0 +1,52 @@
+---Command arguments
+/home/ying/diem/old_seq_benchmarks/functional/strong_edges/strong_edges.seqArray.bpl
+-monomorphize
+/env:2
+/proverLog:strong_edges.seqArray.smt2
+/proverOpt:PROVER_PATH=/home/ying/CVC4/seq_prod/bin/cvc5
+/proverOpt:O:strings-exp=true
+/proverOpt:O:strings-seq-update=true
+/proverOpt:SOLVER=CVC5
+/trace
+-doModSetAnalysis
+--------------------
+Parsing /home/ying/diem/old_seq_benchmarks/functional/strong_edges/strong_edges.seqArray.bpl
+Coalescing blocks...
+Inlining...
+[TRACE] Using prover: /home/ying/CVC4/seq_prod/bin/cvc5
+
+Verifying $42_TestStrongEdges_glob_and_field_edges$verify ...
+  [0.142 s, 4 proof obligations]  verified
+
+Verifying $42_TestStrongEdges_glob_and_field_edges_incorrect$verify ...
+  [0.027 s, 4 proof obligations]  error
+assert_failed(2,1208,1239): post-condition does not hold
+Execution trace:
+    /home/ying/diem/old_seq_benchmarks/functional/strong_edges/strong_edges.seqArray.bpl(1223,9): anon0
+    /home/ying/diem/old_seq_benchmarks/functional/strong_edges/strong_edges.seqArray.bpl(1223,9): anon0$1
+    /home/ying/diem/old_seq_benchmarks/functional/strong_edges/strong_edges.seqArray.bpl(1260,13): anon7_Else
+    /home/ying/diem/old_seq_benchmarks/functional/strong_edges/strong_edges.seqArray.bpl(1262,5): anon8_Else
+
+Verifying $42_TestStrongEdges_loc__edge_incorrect$verify ...
+  [0.011 s, 1 proof obligation]  error
+assert_failed(2,1443,1457): unknown assertion failed
+Execution trace:
+    /home/ying/diem/old_seq_benchmarks/functional/strong_edges/strong_edges.seqArray.bpl(1334,5): anon0
+    /home/ying/diem/old_seq_benchmarks/functional/strong_edges/strong_edges.seqArray.bpl(1334,5): anon0$1
+
+Verifying $42_TestStrongEdges_loc_edge$verify ...
+  [0.004 s, 1 proof obligation]  verified
+
+Verifying $42_TestStrongEdges_vec_edge$verify ...
+  [0.062 s, 4 proof obligations]  error
+assert_failed(2,953,979): post-condition does not hold
+Execution trace:
+    /home/ying/diem/old_seq_benchmarks/functional/strong_edges/strong_edges.seqArray.bpl(1464,9): anon0
+    /home/ying/diem/old_seq_benchmarks/functional/strong_edges/strong_edges.seqArray.bpl(1464,9): anon0$1
+    /home/ying/diem/old_seq_benchmarks/functional/strong_edges/strong_edges.seqArray.bpl(665,5): inline$$1_Vector_borrow'u64'$0$anon3_Else
+    /home/ying/diem/old_seq_benchmarks/functional/strong_edges/strong_edges.seqArray.bpl(1498,5): anon6_Else
+    /home/ying/diem/old_seq_benchmarks/functional/strong_edges/strong_edges.seqArray.bpl(680,7): inline$$1_Vector_borrow_mut'u64'$0$anon0
+    /home/ying/diem/old_seq_benchmarks/functional/strong_edges/strong_edges.seqArray.bpl(681,5): inline$$1_Vector_borrow_mut'u64'$0$anon3_Else
+    /home/ying/diem/old_seq_benchmarks/functional/strong_edges/strong_edges.seqArray.bpl(1519,5): anon7_Else
+
+Boogie program verifier finished with 2 verified, 3 errors

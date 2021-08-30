@@ -1,0 +1,81 @@
+unsat
+unknown
+(:reason-unknown "(incomplete quantifiers)")
+(((ControlFlow 0 0) 22475))
+(((ControlFlow 0 22475) 16196))
+(((ControlFlow 0 16196) 16190))
+(((ControlFlow 0 16190) 16200))
+(((ControlFlow 0 16200) 16228))
+(((ControlFlow 0 16228) 16461))
+(((ControlFlow 0 16461) 16441))
+(((ControlFlow 0 16441) (- 22806)))
+unsat
+unsat
+unsat
+unsat
+unknown
+(:reason-unknown "(incomplete quantifiers)")
+(((ControlFlow 0 0) 23583))
+(((ControlFlow 0 23583) 17608))
+(((ControlFlow 0 17608) 17602))
+(((ControlFlow 0 17602) 17612))
+(((ControlFlow 0 17612) 17624))
+(((ControlFlow 0 17624) (- 23772)))
+unsat
+unknown
+(:reason-unknown "(incomplete quantifiers)")
+(((ControlFlow 0 0) 23948))
+(((ControlFlow 0 23948) 18085))
+(((ControlFlow 0 18085) (- 24043)))
+unsat
+unknown
+(:reason-unknown "(incomplete quantifiers)")
+(((ControlFlow 0 0) 24249))
+(((ControlFlow 0 24249) 18476))
+(((ControlFlow 0 18476) 18470))
+(((ControlFlow 0 18470) 18480))
+(((ControlFlow 0 18480) 18657))
+(((ControlFlow 0 18657) 18597))
+(((ControlFlow 0 18597) 18681))
+(((ControlFlow 0 18681) (- 24526)))
+unsat
+unsat
+unknown
+(:reason-unknown "(incomplete quantifiers)")
+(((ControlFlow 0 0) 25010))
+(((ControlFlow 0 25010) 19535))
+(((ControlFlow 0 19535) 19529))
+(((ControlFlow 0 19529) 19985))
+(((ControlFlow 0 19985) 19925))
+(((ControlFlow 0 19925) 20003))
+(((ControlFlow 0 20003) 19798))
+(((ControlFlow 0 19798) (- 25508)))
+unsat
+unsat
+unknown
+(:reason-unknown "(incomplete quantifiers)")
+(((ControlFlow 0 0) 26026))
+(((ControlFlow 0 26026) 20895))
+(((ControlFlow 0 20895) (- 26211)))
+unknown
+(:reason-unknown "(incomplete quantifiers)")
+(((ControlFlow 0 0) 26026))
+(((ControlFlow 0 26026) 20895))
+(((ControlFlow 0 20895) 20889))
+(((ControlFlow 0 20889) 21064))
+(((ControlFlow 0 21064) 21004))
+(((ControlFlow 0 21004) 21090))
+(((ControlFlow 0 21090) (- 26383)))
+unsat
+unknown
+(:reason-unknown "(incomplete quantifiers)")
+(((ControlFlow 0 0) 26549))
+(((ControlFlow 0 26549) 21585))
+(((ControlFlow 0 21585) 21579))
+(((ControlFlow 0 21579) 21844))
+(((ControlFlow 0 21844) 21838))
+(((ControlFlow 0 21838) 22011))
+(((ControlFlow 0 22011) 21951))
+(((ControlFlow 0 21951) 22037))
+(((ControlFlow 0 22037) (- 27047)))
+unsat

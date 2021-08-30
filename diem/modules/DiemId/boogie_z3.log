@@ -1,0 +1,17 @@
+---Command arguments
+/home/ying/diem/old_seq_benchmarks/modules/DiemId/DiemId.z3.bpl
+-monomorphize
+/env:2
+/proverLog:DiemId.z3.smt2
+/proverOpt:PROVER_PATH=/home/ying/bin/z3
+/proverOpt:SOLVER=Z3
+/trace
+-doModSetAnalysis
+--------------------
+Parsing /home/ying/diem/old_seq_benchmarks/modules/DiemId/DiemId.z3.bpl
+Coalescing blocks...
+Inlining...
+[TRACE] Using prover: /home/ying/bin/z3
+
+Verifying $1_DiemId_tc_domain_manager_exists$verify ...
+  [0.159 s, 2 proof obligations]  verified

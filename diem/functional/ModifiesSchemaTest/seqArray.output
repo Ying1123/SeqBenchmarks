@@ -1,0 +1,8 @@
+/home/ying/diem/old_seq_benchmarks/functional/ModifiesSchemaTest/ModifiesSchemaTest.seqArray.smt2:53.14: warning: Attribute ':skolemid' not supported (ignoring this and all following uses)
+/home/ying/diem/old_seq_benchmarks/functional/ModifiesSchemaTest/ModifiesSchemaTest.seqArray.smt2:176.149: warning: Attribute ':weight' not supported (ignoring this and all following uses)
+unsat
+unsat
+unsat
+unsat
+unsat
+unsat

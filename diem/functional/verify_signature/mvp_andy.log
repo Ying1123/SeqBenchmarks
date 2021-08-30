@@ -1,0 +1,37 @@
+error: unbound address
+  ┌─ /home/ying/diem/language/move-prover/tests/sources/functional/verify_signature.move:3:9
+  │
+3 │     use DiemFramework::Signature;
+  │         ^^^^^^^^^^^^^ Unbound address 'DiemFramework'
+
+error: unbound module
+  ┌─ /home/ying/diem/language/move-prover/tests/sources/functional/verify_signature.move:3:9
+  │
+3 │     use DiemFramework::Signature;
+  │         ^^^^^^^^^^^^^^^^^^^^^^^^ Invalid 'use'. Unbound module: 'DiemFramework::Signature'
+
+error: unbound module
+  ┌─ /home/ying/diem/language/move-prover/tests/sources/functional/verify_signature.move:7:9
+  │
+7 │         Signature::ed25519_validate_pubkey(public_key)
+  │         ^^^^^^^^^ Unbound module alias 'Signature'
+
+error: unbound module
+   ┌─ /home/ying/diem/language/move-prover/tests/sources/functional/verify_signature.move:10:27
+   │
+10 │         ensures result == Signature::ed25519_validate_pubkey(public_key);
+   │                           ^^^^^^^^^ Unbound module alias 'Signature'
+
+error: unbound module
+   ┌─ /home/ying/diem/language/move-prover/tests/sources/functional/verify_signature.move:18:9
+   │
+18 │         Signature::ed25519_verify(signature, public_key, message)
+   │         ^^^^^^^^^ Unbound module alias 'Signature'
+
+error: unbound module
+   ┌─ /home/ying/diem/language/move-prover/tests/sources/functional/verify_signature.move:21:27
+   │
+21 │         ensures result == Signature::ed25519_verify(signature, public_key, message);
+   │                           ^^^^^^^^^ Unbound module alias 'Signature'
+
+exiting with model building errors

@@ -1,0 +1,7 @@
+error: unbound address
+   ┌─ /home/ying/diem/language/move-prover/tests/sources/functional/pure_function_call_incorrect.move:66:20
+   │
+66 │             get_x(@DiemRoot)
+   │                    ^^^^^^^^ Unbound address 'DiemRoot'. Try declaring it with 'address DiemRoot;'
+
+exiting with model building errors

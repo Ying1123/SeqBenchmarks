@@ -1,0 +1,26 @@
+---Command arguments
+/home/ying/diem/old_seq_benchmarks/functional/address_serialization_constant_size/address_serialization_constant_size.andy.bpl
+-monomorphize
+/env:2
+/proverLog:address_serialization_constant_size.andy_strings.smt2
+/proverOpt:PROVER_PATH=/home/ying/CVC4/seq_prod/bin/cvc5
+/proverOpt:O:strings-exp=true
+/proverOpt:SOLVER=CVC5
+/trace
+-doModSetAnalysis
+--------------------
+Parsing /home/ying/diem/old_seq_benchmarks/functional/address_serialization_constant_size/address_serialization_constant_size.andy.bpl
+Coalescing blocks...
+Inlining...
+[TRACE] Using prover: /home/ying/CVC4/seq_prod/bin/cvc5
+
+Verifying $42_TestAxioms_id_T$verify ...
+  [0.132 s, 1 proof obligation]  verified
+
+Verifying $42_TestAxioms_id_u64$verify ...
+  [0.004 s, 1 proof obligation]  verified
+
+Verifying $42_TestAxioms_incr$verify ...
+  [0.010 s, 1 proof obligation]  verified
+
+Boogie program verifier finished with 3 verified, 0 errors

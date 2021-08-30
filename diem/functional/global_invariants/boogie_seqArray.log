@@ -1,0 +1,47 @@
+---Command arguments
+/home/ying/diem/old_seq_benchmarks/functional/global_invariants/global_invariants.seqArray.bpl
+-monomorphize
+/env:2
+/proverLog:global_invariants.seqArray.smt2
+/proverOpt:PROVER_PATH=/home/ying/CVC4/seq_prod/bin/cvc5
+/proverOpt:O:strings-exp=true
+/proverOpt:O:strings-seq-update=true
+/proverOpt:SOLVER=CVC5
+/trace
+-doModSetAnalysis
+--------------------
+Parsing /home/ying/diem/old_seq_benchmarks/functional/global_invariants/global_invariants.seqArray.bpl
+Coalescing blocks...
+Inlining...
+[TRACE] Using prover: /home/ying/CVC4/seq_prod/bin/cvc5
+
+Verifying $42_TestEmits_opaque$verify ...
+  [7.791 s, 5 proof obligations]  verified
+
+Verifying $42_TestEmits_callee$verify ...
+  [0.803 s, 4 proof obligations]  verified
+
+Verifying $42_TestEmits_callee_partial$verify ...
+  [0.254 s, 3 proof obligations]  verified
+
+Verifying $42_TestEmits_conditional$verify ...
+  [0.199 s, 2 proof obligations]  verified
+
+Verifying $42_TestEmits_conditional_bool$verify ...
+  [0.213 s, 2 proof obligations]  verified
+
+Verifying $42_TestEmits_conditional_missing_condition_incorrect$verify ...
+  [0.323 s, 2 proof obligations]  error
+assert_failed(2,4091,4126): function does not emit the expected event
+Execution trace:
+    /home/ying/diem/old_seq_benchmarks/functional/global_invariants/global_invariants.seqArray.bpl(1738,9): anon0
+    /home/ying/diem/old_seq_benchmarks/functional/global_invariants/global_invariants.seqArray.bpl(918,5): inline$$InitEventStore$0$anon0
+    /home/ying/diem/old_seq_benchmarks/functional/global_invariants/global_invariants.seqArray.bpl(1738,9): anon0$1
+    /home/ying/diem/old_seq_benchmarks/functional/global_invariants/global_invariants.seqArray.bpl(541,9): inline$$Gt$0$anon0
+    /home/ying/diem/old_seq_benchmarks/functional/global_invariants/global_invariants.seqArray.bpl(1769,34): anon7_Else
+    /home/ying/diem/old_seq_benchmarks/functional/global_invariants/global_invariants.seqArray.bpl(1807,1): L3
+
+Verifying $42_TestEmits_conditional_multiple$verify ...
+  [7.990 s, 4 proof obligations]  verified
+Prover error: cvc5 interrupted by SIGTERM.
+

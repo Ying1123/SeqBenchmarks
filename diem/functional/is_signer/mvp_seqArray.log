@@ -1,0 +1,25 @@
+error: unbound address
+  ┌─ /home/ying/diem/language/move-prover/tests/sources/functional/is_signer.move:6:9
+  │
+6 │     use DiemFramework::Roles;
+  │         ^^^^^^^^^^^^^ Unbound address 'DiemFramework'
+
+error: unbound module
+  ┌─ /home/ying/diem/language/move-prover/tests/sources/functional/is_signer.move:6:9
+  │
+6 │     use DiemFramework::Roles;
+  │         ^^^^^^^^^^^^^^^^^^^^ Invalid 'use'. Unbound module: 'DiemFramework::Roles'
+
+error: unbound module
+   ┌─ /home/ying/diem/language/move-prover/tests/sources/functional/is_signer.move:53:9
+   │
+53 │         Roles::spec_has_diem_root_role_addr(addr)
+   │         ^^^^^ Unbound module alias 'Roles'
+
+error: unbound module
+   ┌─ /home/ying/diem/language/move-prover/tests/sources/functional/is_signer.move:56:9
+   │
+56 │         Roles::has_diem_root_role(account)
+   │         ^^^^^ Unbound module alias 'Roles'
+
+exiting with model building errors

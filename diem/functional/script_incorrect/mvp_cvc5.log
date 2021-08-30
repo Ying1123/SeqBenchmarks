@@ -1,0 +1,13 @@
+error: unbound module
+  ┌─ /home/ying/diem/language/move-prover/tests/sources/functional/script_incorrect.move:4:5
+  │
+4 │ use 0x1::ScriptProvider;
+  │     ^^^^^^^^^^^^^^^^^^^ Invalid 'use'. Unbound module: '0x1::ScriptProvider'
+
+error: unbound module
+  ┌─ /home/ying/diem/language/move-prover/tests/sources/functional/script_incorrect.move:8:5
+  │
+8 │     ScriptProvider::register<Token>(&account);
+  │     ^^^^^^^^^^^^^^ Unbound module alias 'ScriptProvider'
+
+exiting with model building errors

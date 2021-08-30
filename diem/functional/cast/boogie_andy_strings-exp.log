@@ -1,0 +1,23 @@
+---Command arguments
+/home/ying/diem/old_seq_benchmarks/functional/cast/cast.andy.bpl
+-monomorphize
+/env:2
+/proverLog:cast.andy_strings.smt2
+/proverOpt:PROVER_PATH=/home/ying/CVC4/seq_prod/bin/cvc5
+/proverOpt:O:strings-exp=true
+/proverOpt:SOLVER=CVC5
+/trace
+-doModSetAnalysis
+--------------------
+Parsing /home/ying/diem/old_seq_benchmarks/functional/cast/cast.andy.bpl
+Coalescing blocks...
+Inlining...
+[TRACE] Using prover: /home/ying/CVC4/seq_prod/bin/cvc5
+
+Verifying $42_VectorExists_do_nothing_ref$verify ...
+  [0.144 s, 10 proof obligations]  verified
+
+Verifying $42_VectorExists_do_nothing_ref_mut$verify ...
+  [0.018 s, 11 proof obligations]  verified
+
+Boogie program verifier finished with 2 verified, 0 errors
