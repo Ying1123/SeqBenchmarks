@@ -1,0 +1,34 @@
+---Command arguments
+/home/ying/diem/seq_benchmarks/modules_in_func/DiemAccount/seqArray_array/DiemAccount.bpl
+-monomorphize
+/env:2
+-proverLog:/home/ying/diem/seq_benchmarks/modules_in_func/DiemAccount/seqArray_array/@PROC@.smt2
+/proverOpt:PROVER_PATH=/home/ying/CVC4/seq_prod/bin/cvc5
+/proverOpt:O:pre-skolem-quant=true
+/proverOpt:O:no-dt-share-sel=true
+/proverOpt:O:ee-mode=central
+/proverOpt:SOLVER=CVC5
+/trace
+-doModSetAnalysis
+--------------------
+Parsing /home/ying/diem/seq_benchmarks/modules_in_func/DiemAccount/seqArray_array/DiemAccount.bpl
+Coalescing blocks...
+Inlining...
+[TRACE] Using prover: /home/ying/CVC4/seq_prod/bin/cvc5
+
+Verifying $1_DiemTimestamp_update_global_time$verify ...
+  [0.430 s, 35 proof obligations]  verified
+
+Verifying $1_Roles_grant_role$verify ...
+  [0.616 s, 25 proof obligations]  verified
+
+Verifying $1_ValidatorConfig_remove_operator$verify ...
+  [1.508 s, 16 proof obligations]  verified
+
+Verifying $1_ValidatorConfig_set_config$verify ...
+  [1.226 s, 18 proof obligations]  verified
+
+Verifying $1_ValidatorConfig_set_operator$verify ...
+  [2.108 s, 21 proof obligations]  verified
+Prover error: cvc5 interrupted by SIGTERM.
+

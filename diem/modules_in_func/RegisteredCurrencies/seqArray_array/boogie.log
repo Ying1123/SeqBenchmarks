@@ -1,0 +1,25 @@
+---Command arguments
+/home/ying/diem/seq_benchmarks/modules_in_func/RegisteredCurrencies/seqArray_array/RegisteredCurrencies.bpl
+-monomorphize
+/env:2
+-proverLog:/home/ying/diem/seq_benchmarks/modules_in_func/RegisteredCurrencies/seqArray_array/@PROC@.smt2
+/proverOpt:PROVER_PATH=/home/ying/CVC4/seq_prod/bin/cvc5
+/proverOpt:O:pre-skolem-quant=true
+/proverOpt:O:no-dt-share-sel=true
+/proverOpt:O:ee-mode=central
+/proverOpt:SOLVER=CVC5
+/trace
+-doModSetAnalysis
+--------------------
+Parsing /home/ying/diem/seq_benchmarks/modules_in_func/RegisteredCurrencies/seqArray_array/RegisteredCurrencies.bpl
+Coalescing blocks...
+Inlining...
+[TRACE] Using prover: /home/ying/CVC4/seq_prod/bin/cvc5
+
+Verifying $1_DiemTimestamp_update_global_time$verify ...
+  [0.340 s, 35 proof obligations]  verified
+
+Verifying $1_RegisteredCurrencies_initialize$verify ...
+  [0.240 s, 20 proof obligations]  verified
+Prover error: cvc5 interrupted by SIGTERM.
+

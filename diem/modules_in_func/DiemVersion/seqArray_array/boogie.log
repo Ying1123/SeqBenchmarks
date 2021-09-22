@@ -1,0 +1,109 @@
+---Command arguments
+/home/ying/diem/seq_benchmarks/modules_in_func/DiemVersion/seqArray_array/DiemVersion.bpl
+-monomorphize
+/env:2
+-proverLog:/home/ying/diem/seq_benchmarks/modules_in_func/DiemVersion/seqArray_array/@PROC@.smt2
+/proverOpt:PROVER_PATH=/home/ying/CVC4/seq_prod/bin/cvc5
+/proverOpt:O:pre-skolem-quant=true
+/proverOpt:O:no-dt-share-sel=true
+/proverOpt:O:ee-mode=central
+/proverOpt:SOLVER=CVC5
+/trace
+-doModSetAnalysis
+--------------------
+Parsing /home/ying/diem/seq_benchmarks/modules_in_func/DiemVersion/seqArray_array/DiemVersion.bpl
+Coalescing blocks...
+Inlining...
+[TRACE] Using prover: /home/ying/CVC4/seq_prod/bin/cvc5
+
+Verifying $1_DiemTimestamp_update_global_time$verify ...
+  [0.429 s, 35 proof obligations]  verified
+
+Verifying $1_DiemConfig_set$verify ...
+  [0.244 s, 13 proof obligations]  verified
+
+Verifying $1_DiemConfig_set$verify_instantiated_0 ...
+  [0.231 s, 14 proof obligations]  verified
+
+Verifying $1_DiemConfig_set$verify_instantiated_1 ...
+  [0.238 s, 14 proof obligations]  verified
+
+Verifying $1_DiemConfig_set$verify_instantiated_2 ...
+  [0.251 s, 14 proof obligations]  verified
+
+Verifying $1_DiemConfig_set$verify_instantiated_3 ...
+  [0.222 s, 14 proof obligations]  verified
+
+Verifying $1_DiemConfig_publish_new_config$verify ...
+  [0.226 s, 16 proof obligations]  verified
+
+Verifying $1_DiemConfig_publish_new_config$verify_instantiated_0 ...
+  [0.271 s, 17 proof obligations]  verified
+
+Verifying $1_DiemConfig_publish_new_config$verify_instantiated_1 ...
+  [0.228 s, 17 proof obligations]  verified
+
+Verifying $1_DiemConfig_publish_new_config$verify_instantiated_2 ...
+  [0.267 s, 17 proof obligations]  verified
+
+Verifying $1_DiemConfig_publish_new_config$verify_instantiated_3 ...
+  [0.246 s, 17 proof obligations]  verified
+
+Verifying $1_DiemConfig_publish_new_config_and_get_capability$verify ...
+  [0.249 s, 12 proof obligations]  verified
+
+Verifying $1_DiemConfig_publish_new_config_and_get_capability$verify_instantiated_0 ...
+  [0.256 s, 13 proof obligations]  verified
+
+Verifying $1_DiemConfig_publish_new_config_and_get_capability$verify_instantiated_1 ...
+  [0.242 s, 13 proof obligations]  verified
+
+Verifying $1_DiemConfig_publish_new_config_and_get_capability$verify_instantiated_2 ...
+  [0.248 s, 13 proof obligations]  verified
+
+Verifying $1_DiemConfig_publish_new_config_and_get_capability$verify_instantiated_3 ...
+  [0.274 s, 13 proof obligations]  verified
+
+Verifying $1_DiemConfig_set_with_capability_and_reconfigure$verify ...
+  [0.436 s, 14 proof obligations]  verified
+
+Verifying $1_DiemConfig_set_with_capability_and_reconfigure$verify_instantiated_0 ...
+  [1.498 s, 15 proof obligations]  verified
+
+Verifying $1_DiemConfig_set_with_capability_and_reconfigure$verify_instantiated_1 ...
+  [0.523 s, 15 proof obligations]  verified
+
+Verifying $1_DiemConfig_set_with_capability_and_reconfigure$verify_instantiated_2 ...
+  [0.667 s, 15 proof obligations]  verified
+
+Verifying $1_DiemConfig_set_with_capability_and_reconfigure$verify_instantiated_3 ...
+  [0.491 s, 15 proof obligations]  verified
+
+Verifying $1_DiemAccount_create_child_vasp_account$verify ...
+  [5.745 s, 37 proof obligations]  verified
+
+Verifying $1_DiemAccount_create_child_vasp_account$verify_instantiated_0 ...
+  [5.690 s, 37 proof obligations]  verified
+
+Verifying $1_DiemAccount_create_child_vasp_account$verify_instantiated_1 ...
+  [7.621 s, 37 proof obligations]  verified
+
+Verifying $1_DiemAccount_create_designated_dealer$verify ...
+  [3.592 s, 40 proof obligations]  verified
+
+Verifying $1_DiemAccount_create_designated_dealer$verify_instantiated_0 ...
+  [3.992 s, 40 proof obligations]  verified
+
+Verifying $1_DiemAccount_create_designated_dealer$verify_instantiated_1 ...
+  [5.448 s, 40 proof obligations]  verified
+
+Verifying $1_DiemAccount_create_diem_root_account$verify ...
+  [1.943 s, 36 proof obligations]  verified
+
+Verifying $1_DiemAccount_create_parent_vasp_account$verify ...
+  [6.081 s, 38 proof obligations]  verified
+
+Verifying $1_DiemAccount_create_parent_vasp_account$verify_instantiated_0 ...
+  [9.609 s, 38 proof obligations]  verified
+Prover error: cvc5 interrupted by SIGTERM.
+

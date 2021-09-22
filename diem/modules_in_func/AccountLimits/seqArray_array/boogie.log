@@ -1,0 +1,112 @@
+---Command arguments
+/home/ying/diem/seq_benchmarks/modules_in_func/AccountLimits/seqArray_array/AccountLimits.bpl
+-monomorphize
+/env:2
+-proverLog:/home/ying/diem/seq_benchmarks/modules_in_func/AccountLimits/seqArray_array/@PROC@.smt2
+/proverOpt:PROVER_PATH=/home/ying/CVC4/seq_prod/bin/cvc5
+/proverOpt:O:pre-skolem-quant=true
+/proverOpt:O:no-dt-share-sel=true
+/proverOpt:O:ee-mode=central
+/proverOpt:SOLVER=CVC5
+/trace
+-doModSetAnalysis
+--------------------
+Parsing /home/ying/diem/seq_benchmarks/modules_in_func/AccountLimits/seqArray_array/AccountLimits.bpl
+Coalescing blocks...
+Inlining...
+[TRACE] Using prover: /home/ying/CVC4/seq_prod/bin/cvc5
+
+Verifying $1_Roles_grant_role$verify ...
+  [0.697 s, 25 proof obligations]  verified
+
+Verifying $1_AccountLimits_current_time$verify ...
+  [0.010 s, 0 proof obligations]  verified
+
+Verifying $1_AccountLimits_can_receive_and_update_window$verify ...
+  [0.320 s, 9 proof obligations]  verified
+
+Verifying $1_AccountLimits_can_receive_and_update_window$verify_instantiated_0 ...
+  [0.345 s, 9 proof obligations]  verified
+
+Verifying $1_AccountLimits_can_receive_and_update_window$verify_instantiated_1 ...
+  [0.349 s, 9 proof obligations]  verified
+
+Verifying $1_AccountLimits_can_withdraw_and_update_window$verify ...
+  [0.519 s, 8 proof obligations]  verified
+
+Verifying $1_AccountLimits_can_withdraw_and_update_window$verify_instantiated_0 ...
+  [0.506 s, 8 proof obligations]  verified
+
+Verifying $1_AccountLimits_can_withdraw_and_update_window$verify_instantiated_1 ...
+  [0.516 s, 8 proof obligations]  verified
+
+Verifying $1_AccountLimits_grant_mutation_capability$verify ...
+  [0.053 s, 6 proof obligations]  verified
+
+Verifying $1_AccountLimits_has_limits_published$verify ...
+  [0.003 s, 0 proof obligations]  verified
+
+Verifying $1_AccountLimits_has_limits_published$verify_instantiated_0 ...
+  [0.003 s, 0 proof obligations]  verified
+
+Verifying $1_AccountLimits_has_limits_published$verify_instantiated_1 ...
+  [0.003 s, 0 proof obligations]  verified
+
+Verifying $1_AccountLimits_has_window_published$verify ...
+  [0.007 s, 1 proof obligation]  verified
+
+Verifying $1_AccountLimits_is_unrestricted$verify ...
+  [0.016 s, 2 proof obligations]  verified
+
+Verifying $1_AccountLimits_limits_definition_address$verify ...
+  [0.002 s, 0 proof obligations]  verified
+
+Verifying $1_AccountLimits_publish_window$verify ...
+  [0.308 s, 12 proof obligations]  verified
+
+Verifying $1_AccountLimits_publish_window$verify_instantiated_0 ...
+  [0.338 s, 12 proof obligations]  verified
+
+Verifying $1_AccountLimits_publish_window$verify_instantiated_1 ...
+  [0.327 s, 12 proof obligations]  verified
+
+Verifying $1_AccountLimits_reset_window$verify ...
+  [0.246 s, 5 proof obligations]  verified
+
+Verifying $1_AccountLimits_update_deposit_limits$verify ...
+  [0.421 s, 16 proof obligations]  verified
+
+Verifying $1_AccountLimits_update_deposit_limits$verify_instantiated_0 ...
+  [0.423 s, 16 proof obligations]  verified
+
+Verifying $1_AccountLimits_update_deposit_limits$verify_instantiated_1 ...
+  [0.421 s, 16 proof obligations]  verified
+
+Verifying $1_AccountLimits_update_limits_definition$verify ...
+  [0.392 s, 12 proof obligations]  verified
+
+Verifying $1_AccountLimits_update_limits_definition$verify_instantiated_0 ...
+  [0.416 s, 16 proof obligations]  verified
+
+Verifying $1_AccountLimits_update_limits_definition$verify_instantiated_1 ...
+  [0.466 s, 16 proof obligations]  verified
+
+Verifying $1_AccountLimits_update_window_info$verify ...
+  [0.494 s, 6 proof obligations]  verified
+
+Verifying $1_AccountLimits_update_window_info$verify_instantiated_0 ...
+  [0.549 s, 6 proof obligations]  verified
+
+Verifying $1_AccountLimits_update_window_info$verify_instantiated_1 ...
+  [0.660 s, 6 proof obligations]  verified
+
+Verifying $1_AccountLimits_update_withdrawal_limits$verify ...
+  [0.436 s, 14 proof obligations]  verified
+
+Verifying $1_AccountLimits_update_withdrawal_limits$verify_instantiated_0 ...
+  [0.504 s, 14 proof obligations]  verified
+
+Verifying $1_AccountLimits_update_withdrawal_limits$verify_instantiated_1 ...
+  [0.484 s, 14 proof obligations]  verified
+
+Boogie program verifier finished with 31 verified, 0 errors

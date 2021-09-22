@@ -1,0 +1,58 @@
+---Command arguments
+/home/ying/diem/seq_benchmarks/modules_in_func/XUS/seqArray_array/XUS.bpl
+-monomorphize
+/env:2
+-proverLog:/home/ying/diem/seq_benchmarks/modules_in_func/XUS/seqArray_array/@PROC@.smt2
+/proverOpt:PROVER_PATH=/home/ying/CVC4/seq_prod/bin/cvc5
+/proverOpt:O:pre-skolem-quant=true
+/proverOpt:O:no-dt-share-sel=true
+/proverOpt:O:ee-mode=central
+/proverOpt:SOLVER=CVC5
+/trace
+-doModSetAnalysis
+--------------------
+Parsing /home/ying/diem/seq_benchmarks/modules_in_func/XUS/seqArray_array/XUS.bpl
+Coalescing blocks...
+Inlining...
+[TRACE] Using prover: /home/ying/CVC4/seq_prod/bin/cvc5
+
+Verifying $1_DiemTimestamp_update_global_time$verify ...
+  [0.409 s, 35 proof obligations]  verified
+
+Verifying $1_Diem_burn_with_resource_cap$verify ...
+  [0.754 s, 43 proof obligations]  verified
+
+Verifying $1_Diem_burn_with_resource_cap$verify_instantiated_0 ...
+  [0.747 s, 46 proof obligations]  verified
+
+Verifying $1_Diem_burn_with_resource_cap$verify_instantiated_1 ...
+  [0.754 s, 46 proof obligations]  verified
+
+Verifying $1_Diem_cancel_burn_with_capability$verify ...
+  [0.776 s, 41 proof obligations]  verified
+
+Verifying $1_Diem_cancel_burn_with_capability$verify_instantiated_0 ...
+  [0.808 s, 43 proof obligations]  verified
+
+Verifying $1_Diem_cancel_burn_with_capability$verify_instantiated_1 ...
+  [0.790 s, 43 proof obligations]  verified
+
+Verifying $1_Diem_mint_with_capability$verify ...
+  [0.740 s, 39 proof obligations]  verified
+
+Verifying $1_Diem_mint_with_capability$verify_instantiated_0 ...
+  [0.750 s, 41 proof obligations]  verified
+
+Verifying $1_Diem_mint_with_capability$verify_instantiated_1 ...
+  [0.733 s, 41 proof obligations]  verified
+
+Verifying $1_Diem_preburn_with_resource$verify ...
+  [1.008 s, 36 proof obligations]  verified
+
+Verifying $1_Diem_preburn_with_resource$verify_instantiated_0 ...
+  [0.978 s, 38 proof obligations]  verified
+
+Verifying $1_Diem_preburn_with_resource$verify_instantiated_1 ...
+  [1.000 s, 38 proof obligations]  verified
+Prover error: cvc5 interrupted by SIGTERM.
+
