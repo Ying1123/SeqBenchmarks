@@ -1,0 +1,33 @@
+---Command arguments
+/home/ying/diem/seq_benchmarks/modules_in_func/VASPDomain/z3/VASPDomain.bpl
+-monomorphize
+/env:2
+-proverLog:/home/ying/diem/seq_benchmarks/modules_in_func/VASPDomain/z3/@PROC@.smt2
+/proverOpt:PROVER_PATH=/home/ying/bin/z3
+/proverOpt:SOLVER=Z3
+/trace
+-doModSetAnalysis
+--------------------
+Parsing /home/ying/diem/seq_benchmarks/modules_in_func/VASPDomain/z3/VASPDomain.bpl
+Coalescing blocks...
+Inlining...
+[TRACE] Using prover: /home/ying/bin/z3
+
+Verifying $1_VASPDomain_add_vasp_domain$verify ...
+  [40.274 s, 19 proof obligations]  timed out
+/home/ying/diem/seq_benchmarks/modules_in_func/VASPDomain/z3/VASPDomain.bpl(2815,27): Verification of '$1_VASPDomain_add_vasp_domain$verify' timed out after 40 seconds
+
+Verifying $1_VASPDomain_create_vasp_domain$verify ...
+  [0.124 s, 5 proof obligations]  verified
+
+Verifying $1_VASPDomain_has_vasp_domain$verify ...
+  [0.063 s, 5 proof obligations]  verified
+
+Verifying $1_VASPDomain_has_vasp_domains$verify ...
+  [0.019 s, 2 proof obligations]  verified
+
+Verifying $1_VASPDomain_publish_vasp_domain_manager$verify ...
+  [0.027 s, 8 proof obligations]  verified
+
+Verifying $1_VASPDomain_publish_vasp_domains$verify ...
+  [0.035 s, 9 proof obligations]  verified

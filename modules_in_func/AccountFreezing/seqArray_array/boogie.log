@@ -1,0 +1,73 @@
+---Command arguments
+/home/ying/diem/seq_benchmarks/modules_in_func/AccountFreezing/seqArray_array/AccountFreezing.bpl
+-monomorphize
+/env:2
+-proverLog:/home/ying/diem/seq_benchmarks/modules_in_func/AccountFreezing/seqArray_array/@PROC@.smt2
+/proverOpt:PROVER_PATH=/home/ying/CVC4/seq_prod/bin/cvc5
+/proverOpt:O:pre-skolem-quant=true
+/proverOpt:O:no-dt-share-sel=true
+/proverOpt:O:ee-mode=central
+/proverOpt:SOLVER=CVC5
+/trace
+-doModSetAnalysis
+--------------------
+Parsing /home/ying/diem/seq_benchmarks/modules_in_func/AccountFreezing/seqArray_array/AccountFreezing.bpl
+Coalescing blocks...
+Inlining...
+[TRACE] Using prover: /home/ying/CVC4/seq_prod/bin/cvc5
+
+Verifying $1_DiemTimestamp_update_global_time$verify ...
+  [0.396 s, 35 proof obligations]  verified
+
+Verifying $1_Roles_grant_role$verify ...
+  [0.564 s, 25 proof obligations]  verified
+
+Verifying $1_AccountFreezing_initialize$verify ...
+  [0.109 s, 8 proof obligations]  verified
+
+Verifying $1_AccountFreezing_account_is_frozen$verify ...
+  [0.015 s, 3 proof obligations]  verified
+
+Verifying $1_AccountFreezing_assert_not_frozen$verify ...
+  [0.011 s, 3 proof obligations]  verified
+
+Verifying $1_AccountFreezing_create$verify ...
+  [0.128 s, 7 proof obligations]  verified
+
+Verifying $1_AccountFreezing_freeze_account$verify ...
+  [0.844 s, 18 proof obligations]  verified
+
+Verifying $1_AccountFreezing_unfreeze_account$verify ...
+  [0.859 s, 16 proof obligations]  verified
+
+Verifying $1_DiemAccount_create_child_vasp_account$verify ...
+  [5.634 s, 37 proof obligations]  verified
+
+Verifying $1_DiemAccount_create_child_vasp_account$verify_instantiated_0 ...
+  [5.800 s, 37 proof obligations]  verified
+
+Verifying $1_DiemAccount_create_child_vasp_account$verify_instantiated_1 ...
+  [7.583 s, 37 proof obligations]  verified
+
+Verifying $1_DiemAccount_create_designated_dealer$verify ...
+  [3.445 s, 40 proof obligations]  verified
+
+Verifying $1_DiemAccount_create_designated_dealer$verify_instantiated_0 ...
+  [3.970 s, 40 proof obligations]  verified
+
+Verifying $1_DiemAccount_create_designated_dealer$verify_instantiated_1 ...
+  [5.092 s, 40 proof obligations]  verified
+
+Verifying $1_DiemAccount_create_diem_root_account$verify ...
+  [1.828 s, 36 proof obligations]  verified
+
+Verifying $1_DiemAccount_create_parent_vasp_account$verify ...
+  [5.929 s, 38 proof obligations]  verified
+
+Verifying $1_DiemAccount_create_parent_vasp_account$verify_instantiated_0 ...
+  [9.777 s, 38 proof obligations]  verified
+
+Verifying $1_DiemAccount_create_parent_vasp_account$verify_instantiated_1 ...
+  [5.890 s, 38 proof obligations]  verified
+Prover error: cvc5 interrupted by SIGTERM.
+

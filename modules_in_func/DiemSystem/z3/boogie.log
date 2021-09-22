@@ -1,0 +1,99 @@
+---Command arguments
+/home/ying/diem/seq_benchmarks/modules_in_func/DiemSystem/z3/DiemSystem.bpl
+-monomorphize
+/env:2
+-proverLog:/home/ying/diem/seq_benchmarks/modules_in_func/DiemSystem/z3/@PROC@.smt2
+/proverOpt:PROVER_PATH=/home/ying/bin/z3
+/proverOpt:SOLVER=Z3
+/trace
+-doModSetAnalysis
+--------------------
+Parsing /home/ying/diem/seq_benchmarks/modules_in_func/DiemSystem/z3/DiemSystem.bpl
+Coalescing blocks...
+Inlining...
+[TRACE] Using prover: /home/ying/bin/z3
+
+Verifying $1_DiemTimestamp_update_global_time$verify ...
+  [0.177 s, 35 proof obligations]  verified
+
+Verifying $1_ValidatorConfig_remove_operator$verify ...
+  [0.076 s, 16 proof obligations]  verified
+
+Verifying $1_ValidatorConfig_set_config$verify ...
+  [0.086 s, 18 proof obligations]  verified
+
+Verifying $1_ValidatorConfig_set_operator$verify ...
+  [0.095 s, 21 proof obligations]  verified
+
+Verifying $1_DiemConfig_set$verify ...
+  [0.060 s, 13 proof obligations]  verified
+
+Verifying $1_DiemConfig_set$verify_instantiated_0 ...
+  [0.053 s, 14 proof obligations]  verified
+
+Verifying $1_DiemConfig_set$verify_instantiated_1 ...
+  [0.053 s, 14 proof obligations]  verified
+
+Verifying $1_DiemConfig_set$verify_instantiated_2 ...
+  [0.057 s, 14 proof obligations]  verified
+
+Verifying $1_DiemConfig_set$verify_instantiated_3 ...
+  [0.052 s, 14 proof obligations]  verified
+
+Verifying $1_DiemConfig_publish_new_config$verify ...
+  [0.053 s, 16 proof obligations]  verified
+
+Verifying $1_DiemConfig_publish_new_config$verify_instantiated_0 ...
+  [0.052 s, 17 proof obligations]  verified
+
+Verifying $1_DiemConfig_publish_new_config$verify_instantiated_1 ...
+  [0.051 s, 17 proof obligations]  verified
+
+Verifying $1_DiemConfig_publish_new_config$verify_instantiated_2 ...
+  [0.055 s, 17 proof obligations]  verified
+
+Verifying $1_DiemConfig_publish_new_config$verify_instantiated_3 ...
+  [0.050 s, 17 proof obligations]  verified
+
+Verifying $1_DiemConfig_publish_new_config_and_get_capability$verify ...
+  [0.053 s, 12 proof obligations]  verified
+
+Verifying $1_DiemConfig_publish_new_config_and_get_capability$verify_instantiated_0 ...
+  [0.058 s, 13 proof obligations]  verified
+
+Verifying $1_DiemConfig_publish_new_config_and_get_capability$verify_instantiated_1 ...
+  [0.050 s, 13 proof obligations]  verified
+
+Verifying $1_DiemConfig_publish_new_config_and_get_capability$verify_instantiated_2 ...
+  [0.054 s, 13 proof obligations]  verified
+
+Verifying $1_DiemConfig_publish_new_config_and_get_capability$verify_instantiated_3 ...
+  [0.057 s, 13 proof obligations]  verified
+
+Verifying $1_DiemConfig_set_with_capability_and_reconfigure$verify ...
+  [0.064 s, 14 proof obligations]  verified
+
+Verifying $1_DiemConfig_set_with_capability_and_reconfigure$verify_instantiated_0 ...
+  [0.069 s, 15 proof obligations]  verified
+
+Verifying $1_DiemConfig_set_with_capability_and_reconfigure$verify_instantiated_1 ...
+  [0.066 s, 15 proof obligations]  verified
+
+Verifying $1_DiemConfig_set_with_capability_and_reconfigure$verify_instantiated_2 ...
+  [0.077 s, 15 proof obligations]  verified
+
+Verifying $1_DiemConfig_set_with_capability_and_reconfigure$verify_instantiated_3 ...
+  [0.069 s, 15 proof obligations]  verified
+
+Verifying $1_DiemSystem_add_validator$verify ...
+  [40.068 s, 31 proof obligations]  timed out
+/home/ying/diem/seq_benchmarks/modules_in_func/DiemSystem/z3/DiemSystem.bpl(18085,27): Verification of '$1_DiemSystem_add_validator$verify' timed out after 40 seconds
+
+Verifying $1_DiemSystem_get_diem_system_config$verify ...
+  [0.219 s, 5 proof obligations]  verified
+
+Verifying $1_DiemSystem_get_ith_validator_address$verify ...
+  [0.053 s, 6 proof obligations]  verified
+
+Verifying $1_DiemSystem_get_validator_config$verify ...
+  [0.700 s, 6 proof obligations]  verified
