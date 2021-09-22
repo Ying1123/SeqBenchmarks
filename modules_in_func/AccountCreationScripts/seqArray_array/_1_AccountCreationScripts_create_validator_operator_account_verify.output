@@ -1,3 +1,0 @@
-/home/ying/diem/seq_benchmarks/modules_in_func/AccountCreationScripts/seqArray_array/_1_AccountCreationScripts_create_validator_operator_account_verify.smt2:541.14: warning: Attribute ':skolemid' not supported (ignoring this and all following uses)
-/home/ying/diem/seq_benchmarks/modules_in_func/AccountCreationScripts/seqArray_array/_1_AccountCreationScripts_create_validator_operator_account_verify.smt2:2121.171: warning: Attribute ':weight' not supported (ignoring this and all following uses)
-unsat

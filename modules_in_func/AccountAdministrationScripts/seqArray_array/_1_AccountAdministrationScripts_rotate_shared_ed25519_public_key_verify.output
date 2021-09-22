@@ -1,3 +1,0 @@
-/home/ying/diem/seq_benchmarks/modules_in_func/AccountAdministrationScripts/seqArray_array/_1_AccountAdministrationScripts_rotate_shared_ed25519_public_key_verify.smt2:495.14: warning: Attribute ':skolemid' not supported (ignoring this and all following uses)
-/home/ying/diem/seq_benchmarks/modules_in_func/AccountAdministrationScripts/seqArray_array/_1_AccountAdministrationScripts_rotate_shared_ed25519_public_key_verify.smt2:1904.149: warning: Attribute ':weight' not supported (ignoring this and all following uses)
-unsat
